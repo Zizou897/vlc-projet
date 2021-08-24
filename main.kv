@@ -1,7 +1,7 @@
 #: import pprint pprint.pprint
 #: import  views.gridInterface controlers.gridInterface 
-
-
+#: import hex kivy.utils.get_color_from_hex
+#: set color_rouge hex("#dd0000")
 
 
 MDBoxLayout:
@@ -31,179 +31,6 @@ MDBoxLayout:
 
 
 <Tab>:
-    # GridLayout:
-    #     cols: 2
-    #     padding: dp(5)
-    #     spacing: dp(5)
-    #     MDBoxLayout:
-    #         orientation: 'vertical'
-    #         BoxLayout:
-    #             orientation: 'vertical'
-    #             canvas.before:
-    #                 Color: 
-    #                     rgb: 1, 1, 1
-    #                 RoundedRectangle:
-    #                     size: self.size
-    #                     pos: self.pos
-    #                     source: "assets/affiche.jpeg"
-    #                     radius:[dp(5), dp(5), dp(0), dp(0)]
-    #             MDIconButton:
-    #                 icon: "play-circle"
-    #                 user_font_size: dp(30)
-    #                 pos_hint: {'right': 1, 'top': 1}
-    #                 theme_text_color: "Custom"
-    #                 text_color: 1, 1, 1
-    #                 on_parent: pprint(dir(self))
-    #         TwoLineListItem:
-    #             text: "Album"
-    #             secondary_text: "32 songs"
-    #             MDIconButton:
-    #                 icon: "dots-vertical"
-    #                 halign: "left"
-    #                 pos_hint: {'right': 1}
-
-
-    #     MDBoxLayout:
-    #         orientation: 'vertical'
-    #         BoxLayout:
-    #             orientation: 'vertical'
-    #             canvas.before:
-    #                 Color: 
-    #                     rgb: 1, 1, 0
-    #                 RoundedRectangle:
-    #                     size: self.size
-    #                     pos: self.pos
-    #                     source: "assets/affiche.jpeg"
-    #                     radius:[dp(5), dp(5), dp(0), dp(0)]
-    #             MDIconButton:
-    #                 icon: "play-circle"
-    #                 user_font_size: dp(30)
-    #                 pos_hint: {'right': 1, 'top': 1}
-    #                 theme_text_color: "Custom"
-    #                 text_color: 1, 1, 1
-    #         TwoLineListItem:
-    #             text: "Album"
-    #             secondary_text: "32 songs"
-    #             MDIconButton:
-    #                 icon: "dots-vertical"
-    #                 halign: "center"
-    #                 pos_hint: {'right': 1}
-
-    #     MDBoxLayout:
-    #         orientation: 'vertical'
-    #         BoxLayout:
-    #             orientation: 'vertical'
-    #             canvas.before:
-    #                 Color: 
-    #                     rgb: 1, 1, 0
-    #                 RoundedRectangle:
-    #                     size: self.size
-    #                     pos: self.pos
-    #                     source: "assets/affiche.jpeg"
-    #                     radius:[dp(5), dp(5), dp(0), dp(0)]
-    #             MDIconButton:
-    #                 icon: "play-circle"
-    #                 user_font_size: dp(30)
-    #                 pos_hint: {'right': 1, 'top': 1}
-    #                 theme_text_color: "Custom"
-    #                 text_color: 1, 1, 1
-    #         TwoLineListItem:
-    #             text: "Album"
-    #             secondary_text: "32 songs"
-    #             MDIconButton:
-    #                 icon: "dots-vertical"
-    #                 halign: "center"
-    #                 pos_hint: {'right': 1}
-
-    #     MDBoxLayout:
-    #         orientation: 'vertical'
-    #         BoxLayout:
-    #             orientation: 'vertical'
-    #             canvas.before:
-    #                 Color: 
-    #                     rgb: 1, 1, 1
-    #                 RoundedRectangle:
-    #                     size: self.size
-    #                     pos: self.pos
-    #                     source: "assets/affiche.jpeg"
-    #                     radius:[dp(5), dp(5), dp(0), dp(0)]
-    #             MDIconButton:
-    #                 icon: "play-circle"
-    #                 user_font_size: dp(30)
-    #                 pos_hint: {'right': 1, 'top': 1}
-    #                 theme_text_color: "Custom"
-    #                 text_color: 1, 1, 1
-    #                 on_parent: pprint(dir(self))
-    #         TwoLineListItem:
-    #             text: "Album"
-    #             secondary_text: "32 songs"
-    #             MDIconButton:
-    #                 icon: "dots-vertical"
-    #                 halign: "left"
-    #                 pos_hint: {'right': 1}
-
-    #     MDBoxLayout:
-    #         orientation: 'vertical'
-    #         BoxLayout:
-    #             orientation: 'vertical'
-    #             canvas.before:
-    #                 Color: 
-    #                     rgb: 1, 1, 1
-    #                 RoundedRectangle:
-    #                     size: self.size
-    #                     pos: self.pos
-    #                     source: "assets/affiche.jpeg"
-    #                     radius:[dp(5), dp(5), dp(0), dp(0)]
-    #             MDIconButton:
-    #                 icon: "play-circle"
-    #                 user_font_size: dp(30)
-    #                 pos_hint: {'right': 1, 'top': 1}
-    #                 theme_text_color: "Custom"
-    #                 text_color: 1, 1, 1
-    #                 on_parent: pprint(dir(self))
-    #         TwoLineListItem:
-    #             text: "Album"
-    #             secondary_text: "32 songs"
-    #             MDIconButton:
-    #                 icon: "dots-vertical"
-    #                 halign: "left"
-    #                 pos_hint: {'right': 1}
-        
-    #     MDBoxLayout:
-    #         orientation: 'vertical'
-    #         BoxLayout:
-    #             orientation: 'vertical'
-    #             canvas.before:
-    #                 Color: 
-    #                     rgb: 1, 1, 0
-    #                 RoundedRectangle:
-    #                     size: self.size
-    #                     pos: self.pos
-    #                     source: "assets/affiche.jpeg"
-    #                     radius:[dp(5), dp(5), dp(0), dp(0)]
-    #             MDIconButton:
-    #                 icon: "play-circle"
-    #                 user_font_size: dp(30)
-    #                 pos_hint: {'right': 1, 'top': 1}
-    #                 theme_text_color: "Custom"
-    #                 text_color: 1, 1, 1
-    #                 on_parent: pprint(dir(self))
-
-
-    #         TwoLineListItem:
-    #             text: "Album"
-    #             secondary_text: "32 songs"
-            
-    #             MDIconButton:
-    #                 icon: "dots-vertical"
-    #                 halign: "left"
-    #                 pos_hint: {'right': 1}
-
-
-
-                    
-    
-
 
     BoxLayout:
         orientation:'vertical'
@@ -214,6 +41,7 @@ MDBoxLayout:
                 name: ''
                 text: 'Audio'
                 icon: 'music'
+    #--------Partie concernant les grids c'est-à-dire 
                 GridLayout:
                     cols: 2
                     padding: dp(5)
@@ -243,34 +71,9 @@ MDBoxLayout:
                             MDIconButton:
                                 icon: "dots-vertical"
                                 halign: "left"
-                                pos_hint: {'right': 1}
+                                pos_hint: {'right': 1, 'center_y': .5}
 
-
-                    MDBoxLayout:
-                        orientation: 'vertical'
-                        BoxLayout:
-                            orientation: 'vertical'
-                            canvas.before:
-                                Color: 
-                                    rgb: 1, 1, 0
-                                RoundedRectangle:
-                                    size: self.size
-                                    pos: self.pos
-                                    source: "assets/affiche.jpeg"
-                                    radius:[dp(5), dp(5), dp(0), dp(0)]
-                            MDIconButton:
-                                icon: "play-circle"
-                                user_font_size: dp(30)
-                                pos_hint: {'right': 1, 'top': 1}
-                                theme_text_color: "Custom"
-                                text_color: 1, 1, 1
-                        TwoLineListItem:
-                            text: "Album"
-                            secondary_text: "32 songs"
-                            MDIconButton:
-                                icon: "dots-vertical"
-                                halign: "center"
-                                pos_hint: {'right': 1}
+#---------------------------------------------
 
                     MDBoxLayout:
                         orientation: 'vertical'
@@ -296,7 +99,37 @@ MDBoxLayout:
                             MDIconButton:
                                 icon: "dots-vertical"
                                 halign: "center"
-                                pos_hint: {'right': 1}
+                                pos_hint: {'right': 1, 'center_y': .5}
+
+#---------------------------------------------
+
+                    MDBoxLayout:
+                        orientation: 'vertical'
+                        BoxLayout:
+                            orientation: 'vertical'
+                            canvas.before:
+                                Color: 
+                                    rgb: 1, 1, 0
+                                RoundedRectangle:
+                                    size: self.size
+                                    pos: self.pos
+                                    source: "assets/affiche.jpeg"
+                                    radius:[dp(5), dp(5), dp(0), dp(0)]
+                            MDIconButton:
+                                icon: "play-circle"
+                                user_font_size: dp(30)
+                                pos_hint: {'right': 1, 'top': 1}
+                                theme_text_color: "Custom"
+                                text_color: 1, 1, 1
+                        TwoLineListItem:
+                            text: "Album"
+                            secondary_text: "32 songs"
+                            MDIconButton:
+                                icon: "dots-vertical"
+                                halign: "center"
+                                pos_hint: {'right': 1, 'center_y': .5}
+
+#---------------------------------------------
 
                     MDBoxLayout:
                         orientation: 'vertical'
@@ -323,7 +156,9 @@ MDBoxLayout:
                             MDIconButton:
                                 icon: "dots-vertical"
                                 halign: "left"
-                                pos_hint: {'right': 1}
+                                pos_hint: {'right': 1, 'center_y': .5}
+
+#---------------------------------------------
 
                     MDBoxLayout:
                         orientation: 'vertical'
@@ -350,8 +185,10 @@ MDBoxLayout:
                             MDIconButton:
                                 icon: "dots-vertical"
                                 halign: "left"
-                                pos_hint: {'right': 1}
-                    
+                                pos_hint: {'right': 1, 'center_y': .5}
+
+#---------------------------------------------
+
                     MDBoxLayout:
                         orientation: 'vertical'
                         BoxLayout:
@@ -371,8 +208,6 @@ MDBoxLayout:
                                 theme_text_color: "Custom"
                                 text_color: 1, 1, 1
                                 on_parent: pprint(dir(self))
-
-
                         TwoLineListItem:
                             text: "Album"
                             secondary_text: "32 songs"
@@ -380,9 +215,13 @@ MDBoxLayout:
                             MDIconButton:
                                 icon: "dots-vertical"
                                 halign: "left"
-                                pos_hint: {'right': 1}
-
-
+                                pos_hint: {'right': 1, 'center_y': .5}
+#-----------------------Boutton Flottant ----------------------
+                MDFloatingActionButton:
+                    icon: "arrow-expand-all"
+                    elevation_normal: 12
+                    pos_hint: {'right': .9, 'top': .2}
+                    md_bg_color: 250/255.0, 155/255.0, 0
 
             MDBottomNavigationItem:
                 name: ''
