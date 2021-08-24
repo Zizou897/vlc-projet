@@ -1,7 +1,7 @@
 from kivymd.app import MDApp
 from kivymd.uix.floatlayout import MDFloatLayout
 from kivymd.uix.tab import MDTabsBase
-from  kivy.properties import StringProperty
+from kivy.properties import StringProperty
 
 
 
@@ -27,7 +27,10 @@ class Tab(MDFloatLayout, MDTabsBase):
 
 
 class MainApp(MDApp):
-    pass
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.theme_cls.theme_style = "Dark"
+    
 
 
 MainApp().run()
